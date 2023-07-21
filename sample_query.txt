@@ -7,4 +7,25 @@ mutation {
 }
 
 
+mutation {
+  createStudent(collegeId:"BJ1T1ow9h",firstName:"Sathish", lastName:"Murugesan")
+}
 
+query {
+  getAllStudents {
+    id
+    firstName
+    lastName
+  }
+}
+
+query {
+  getAllStudents {
+    id
+    firstName
+    college {
+      id
+      collegeName
+    }
+  }
+}
