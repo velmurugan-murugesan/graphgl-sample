@@ -5,6 +5,7 @@ type Query  {
 
 type Mutation {
    createStudent(collegeId:ID,firstName:String,lastName:String):String
+   createCollege(collegeName:String, location:String) : College
 }
 
 
@@ -12,7 +13,7 @@ type Student {
    id:ID!
    firstName:String
    lastName:String
-   collegeId:String
+   college:College
 }
 
 type College {

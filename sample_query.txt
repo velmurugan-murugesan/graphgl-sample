@@ -1,0 +1,10 @@
+mutation {
+  createCollege(collegeName:"AMS",location:"Namakkal") {
+    id
+    collegeName
+    location
+  }
+}
+
+
+
